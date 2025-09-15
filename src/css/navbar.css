@@ -1,0 +1,43 @@
+.navbar {
+    position: sticky;
+    overflow: hidden;
+    padding: 0.25rem;
+    border-radius: 1.5rem;
+    border-bottom: 5px solid;
+    border-left: 3px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    background-color: lightgray;
+}
+
+.navbar-img {
+    width: 4rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: calc(infinity * 1px);
+}
+
+.navbar-img:hover {
+    border-color: lightgray;
+}
+
+.navbar-buttons {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons:hover {
+    background-color: gray;
+    border-color: black;
+    color: white;
+}
+
+.navbar-button-span {
+    font-weight: 600;
+}

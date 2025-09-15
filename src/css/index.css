@@ -1,0 +1,26 @@
+.product-box {
+    width: fit-content;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.buttons {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.buttons:hover {
+    background-color: oklch(74.6% 0.16 232.661);
+    border-color: black;
+    color: white;
+}
+
+.button-span {
+    font-weight: 600;
+}

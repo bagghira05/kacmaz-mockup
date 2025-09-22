@@ -11,89 +11,111 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="display: flex; gap: 0.25rem; align-items: center;">
-                <a href="/">
-                    <img class="navbar-img" src="../assets/image.png">
-                </a>
-                <div style="display: flex; gap: 0.25rem;">
-                    <button class="navbar-buttons" title="Startseite">
+    <nav>
+        <div class="navbar">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; gap: 0.25rem; align-items: center;">
+                    <a href="/">
+                        <img class="navbar-img" src="../assets/image.png">
+                    </a>
+                    <div style="display: flex; gap: 0.25rem;">
+                        <button class="navbar-buttons" title="Startseite">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="navbar-button-span">Startseite</span>
+                        </button>
+                        <button class="navbar-buttons" title="Waren Anzeigen">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M5.005 10.19a1 1 0 0 1 1 1v.233l5.998 3.464L18 11.423v-.232a1 1 0 1 1 2 0V12a1 1 0 0 1-.5.866l-6.997 4.042a1 1 0 0 1-1 0l-6.998-4.042a1 1 0 0 1-.5-.866v-.81a1 1 0 0 1 1-1ZM5 15.15a1 1 0 0 1 1 1v.232l5.997 3.464 5.998-3.464v-.232a1 1 0 1 1 2 0v.81a1 1 0 0 1-.5.865l-6.998 4.042a1 1 0 0 1-1 0L4.5 17.824a1 1 0 0 1-.5-.866v-.81a1 1 0 0 1 1-1Z"
+                                    clip-rule="evenodd" />
+                                <path
+                                    d="M12.503 2.134a1 1 0 0 0-1 0L4.501 6.17A1 1 0 0 0 4.5 7.902l7.002 4.047a1 1 0 0 0 1 0l6.998-4.04a1 1 0 0 0 0-1.732l-6.997-4.042Z" />
+                            </svg>
+                            <span class="navbar-button-span">Warenübersicht</span>
+                        </button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.25rem; margin-right: 0.5rem;">
+                    <button class="navbar-buttons" title="Warenkorb Öffnen">
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
-                                d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                                d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <span class="navbar-button-span">Startseite</span>
+                        <span class="navbar-button-span">Warenkorb</span>
                     </button>
-                    <button class="navbar-buttons" title="Waren Anzeigen">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" viewBox="0 0 24 24">
+                    <button class="navbar-buttons" title="Login">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
-                                d="M5.005 10.19a1 1 0 0 1 1 1v.233l5.998 3.464L18 11.423v-.232a1 1 0 1 1 2 0V12a1 1 0 0 1-.5.866l-6.997 4.042a1 1 0 0 1-1 0l-6.998-4.042a1 1 0 0 1-.5-.866v-.81a1 1 0 0 1 1-1ZM5 15.15a1 1 0 0 1 1 1v.232l5.997 3.464 5.998-3.464v-.232a1 1 0 1 1 2 0v.81a1 1 0 0 1-.5.865l-6.998 4.042a1 1 0 0 1-1 0L4.5 17.824a1 1 0 0 1-.5-.866v-.81a1 1 0 0 1 1-1Z"
+                                d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
                                 clip-rule="evenodd" />
-                            <path
-                                d="M12.503 2.134a1 1 0 0 0-1 0L4.501 6.17A1 1 0 0 0 4.5 7.902l7.002 4.047a1 1 0 0 0 1 0l6.998-4.04a1 1 0 0 0 0-1.732l-6.997-4.042Z" />
                         </svg>
-                        <span class="navbar-button-span">Warenübersicht</span>
                     </button>
                 </div>
             </div>
-            <div style="display: flex; gap: 0.25rem; margin-right: 0.5rem;">
-                <button class="navbar-buttons" title="Warenkorb Öffnen">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <span class="navbar-button-span">Warenkorb</span>
-                </button>
-                <button class="navbar-buttons" title="Login">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
         </div>
-    </div>
+    </nav>
 
     <!-- Main Page -->
-    <div style="width: 80vw; height: 100vh; background-color: yellow; margin-inline: auto;">
-        <div style="display: grid;">
-            <!-- product box struct (will be copied pasted via javascript) -->
-            <div class="product-box">
-                <div style="height: 150px; width: 150px; background-color: red; border-radius: 12px; margin: 0.25rem;">
-                    <span>
-                        Product Placeholder
-                    </span>
-                </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <button class="buttons">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                            viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                    </button>
-                    <button class="buttons">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12.268 6A2 2 0 0 0 14 9h1v1a2 2 0 0 0 3.04 1.708l-.311 1.496a1 1 0 0 1-.979.796H8.605l.208 1H16a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L4.686 5H4a1 1 0 0 1 0-2h1.5a1 1 0 0 1 .979.796L6.939 6h5.329Z" />
-                            <path
-                                d="M18 4a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0V8h2a1 1 0 1 0 0-2h-2V4Z" />
-                        </svg>
-                    </button>
+    <main>
+        <div style="width: 80vw; height: 100vh; background-color: yellow; margin-inline: auto;">
+            <div class="product-grid">
+                <!-- product box struct (will be copied pasted via javascript) -->
+                <div class="product-box">
+                    <div
+                        style="height: 150px; width: 150px; background-color: red; border-radius: 12px; margin: 0.25rem;">
+                        <span>
+                            Product Placeholder
+                        </span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button class="buttons">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </button>
+                        <button class="buttons">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.268 6A2 2 0 0 0 14 9h1v1a2 2 0 0 0 3.04 1.708l-.311 1.496a1 1 0 0 1-.979.796H8.605l.208 1H16a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L4.686 5H4a1 1 0 0 1 0-2h1.5a1 1 0 0 1 .979.796L6.939 6h5.329Z" />
+                                <path
+                                    d="M18 4a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0V8h2a1 1 0 1 0 0-2h-2V4Z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
+
+<script>
+    function duplicateProductBoxes(count) {
+        const productContainer = document.querySelector('main > div > div');
+
+        const originalProductBox = document.querySelector('.product-box');
+
+        for (let i = 0; i < count; i++) {
+            const clonedBox = originalProductBox.cloneNode(true);
+            productContainer.appendChild(clonedBox);
+        }
+    }
+
+    // Duplicate 15 product boxes
+    duplicateProductBoxes(14);
+</script>
 
 </html>

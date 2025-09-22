@@ -1,3 +1,7 @@
+:root {
+    --ui-elements-hover: oklch(77.5% 0.16 232.661);
+}
+
 .navbar {
     position: sticky;
     overflow: hidden;
@@ -7,7 +11,7 @@
     border-left: 3px solid;
     border-right: 1px solid;
     border-top: 1px solid;
-    background-color: lightgray;
+    background: linear-gradient(120deg, #a18cd1, #fad0c4, #fad8c4, #8b29b9);
     margin-bottom: 1rem;
 }
 
@@ -34,7 +38,7 @@
 }
 
 .navbar-buttons:hover {
-    background-color: gray;
+    background-color: var(--ui-elements-hover);
     border-color: black;
     color: white;
 }
